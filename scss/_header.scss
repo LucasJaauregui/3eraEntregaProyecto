@@ -22,7 +22,7 @@
         color: white;
         height: auto;
 
-        .enlaceig {
+        .enlacehome {
             text-align: center;
 
             a {
@@ -69,6 +69,7 @@
 
     .menu {
         width: 100%;
+        margin: auto;
         display: flex;
         justify-content: space-around;
 
@@ -77,16 +78,27 @@
             display: flex;
 
             a {
+                position: relative;
                 color: white;
                 text-decoration: none;
-                
+                font-size: 20px;
+                letter-spacing: 1px;
+                padding: 0 10px;
 
-                &:hover {
-                    background-color:gray;
-                    color: black;
-                    font-weight: bold;
-                    border-radius: 10%;
 
+                &:after {
+                    content: "";
+                    position: absolute;
+                    background-color: palevioletred;
+                    height: 3px;
+                    width: 0;
+                    left: 0;
+                    bottom: -7px;
+                    transition: 0.3s;
+                }
+
+                &:hover::after {
+                    width: 100%;
                 }
             }
         }

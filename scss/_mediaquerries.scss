@@ -36,18 +36,17 @@
             "footer";
     }
 
-    .contenedorNosotros {
+    .contenedorFormulario {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(7, auto);
+        grid-template-rows: repeat(5, auto);
         grid-template-areas:
             "header"
             "contenedorPadre"
             "contenedorMenu"
-            "tituloNosotros"
-            "contenedorLocacion1"
-            "contenedorLocacion2"
+            "contenedorFormulario"
             "footer";
     }
+
 }
 
 
